@@ -10,7 +10,6 @@ $def with(data)
     <table>
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Titulo</th>
                 <th>Genero</th>
                 <th>Duracion</th>
@@ -22,7 +21,6 @@ $def with(data)
         <tbody>
             $for pelicula in data:
                 <tr>
-                    <td>$pelicula["id_pelicula"]</td>
                     <td>$pelicula["titulo"]</td>
                     <td>$pelicula["genero"]</td>
                     <td>$pelicula["duracion"]</td>
