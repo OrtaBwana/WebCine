@@ -1,7 +1,7 @@
 import web
 import requests
 
-API_URL = ""  
+API_URL = "https://api-rest-7nlb.onrender.com/peliculas"  
 
 # Rutas 
 urls = ("/", "Index")
