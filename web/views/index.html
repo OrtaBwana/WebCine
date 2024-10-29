@@ -2,33 +2,39 @@ $def with(data)
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Lista de Peliculas</title>
 </head>
 <body>
-    <h1>Lista de Peliculas</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Titulo</th>
-                <th>Genero</th>
-                <th>Duracion</th>
-                <th>Clasificación</th>
-                <th>Director</th>
-                <th>Año estreno</th>
-            </tr>
-        </thead>
-        <tbody>
-            $for pelicula in data:
-                <tr>
-                    <td>$pelicula["titulo"]</td>
-                    <td>$pelicula["genero"]</td>
-                    <td>$pelicula["duracion"]</td>
-                    <td>$pelicula["clasificacion"]</td>
-                    <td>$pelicula["director"]</td>
-                    <td>$pelicula["ano_estreno"]</td>
-                </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <div class="row">
+            <h1>Lista de Peliculas</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Genero</th>
+                        <th>Duracion</th>
+                        <th>Clasificación</th>
+                        <th>Director</th>
+                        <th>Año estreno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    $for pelicula in data:
+                        <tr>
+                            <td>$pelicula["titulo"]</td>
+                            <td>$pelicula["genero"]</td>
+                            <td>$pelicula["duracion"]</td>
+                            <td>$pelicula["clasificacion"]</td>
+                            <td>$pelicula["director"]</td>
+                            <td>$pelicula["ano_estreno"]</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>    
+    </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
